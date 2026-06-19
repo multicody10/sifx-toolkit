@@ -1,0 +1,18 @@
+{
+  "name": "sifx",
+  "version": "1.0.0",
+  "description": "Sound Image Format eXtended — a still image with a looping ambient sound track, stored as a valid WebP that degrades gracefully everywhere.",
+  "main": "index.js",
+  "bin": {
+    "sifx": "./cli.js"
+  },
+  "scripts": {
+    "test": "node test/roundtrip.test.js && node test/opus-decoder-lib.test.mjs"
+  },
+  "keywords": ["sifx", "webp", "audio", "opus", "format"],
+  "license": "MIT",
+  "dependencies": {
+    "opus-decoder": "^0.7.11",
+    "opusscript": "^0.1.1"
+  }
+}
